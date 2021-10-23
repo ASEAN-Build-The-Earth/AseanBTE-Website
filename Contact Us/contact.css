@@ -1,0 +1,17 @@
+body {
+  font-family: "MinecraftiaRegular";
+  font-size: x-large;
+  background: url(/Assets/Images/bg_bluehills.jpg);
+}
+
+h1 {
+  color: black;
+  margin-top: 8px;
+  text-align: center;
+}
+
+p {
+  margin-top: 32px;
+  margin-left: 8px;
+  color: black;
+}
