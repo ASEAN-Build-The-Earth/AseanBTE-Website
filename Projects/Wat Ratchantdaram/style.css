@@ -1,0 +1,13 @@
+body {
+  font-family: "MinecraftiaRegular";
+  color: black;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 8px;
+}
+
+.content {
+  margin-left: 8px;
+}
