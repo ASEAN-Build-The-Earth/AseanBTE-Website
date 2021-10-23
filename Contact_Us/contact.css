@@ -1,7 +1,7 @@
 body {
   font-family: "MinecraftiaRegular";
   font-size: x-large;
-  background: url(/Assets/Images/bg_bluehills.jpg);
+  background: url(../Assets/Images/bg_bluehills.jpg);
 }
 
 h1 {
