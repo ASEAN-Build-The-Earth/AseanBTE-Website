@@ -1,8 +1,6 @@
 body {
   font-family: "MinecraftiaRegular";
-  font-size: x-large;
-  background: url(../Assets/Images/bg_bluehills.jpg) no-repeat center center
-    fixed;
+  background: url(../Assets/Images/bg_bluehills.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
