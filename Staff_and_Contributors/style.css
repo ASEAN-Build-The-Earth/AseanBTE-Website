@@ -1,7 +1,6 @@
 body {
   font-family: "MinecraftiaRegular";
-  background: url(../Assets/Images/bg_pinkhills.svg) no-repeat center center
-    fixed;
+  background: url(../Assets/Images/bg_pinkhills.svg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -18,6 +17,7 @@ p {
   margin-top: 32px;
   margin-left: 8px;
 }
+
 
 .card {
   padding: 50px;
