@@ -11,3 +11,8 @@ h1 {
 .content {
   margin-left: 8px;
 }
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
