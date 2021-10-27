@@ -1,3 +1,33 @@
+/* Global variables */
+:root {
+  /* 8pt grid */
+  --pt8: 0.5rem;
+  /* Transitions */
+  --ease-out-expo: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-out-expo-slow: all 4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Flex */
+.flx {
+  display: flex;
+}
+
+.flx-ai-c {
+  align-items: center;
+}
+
+.flx-jc-c {
+  justify-content: center;
+}
+
+.flx-jc-fs {
+  justify-content: flex-start;
+}
+
+.flx-jc-fe {
+  justify-content: flex-end;
+}
+
 body {
   font-family: "MinecraftiaRegular";
   font-size: x-large;
