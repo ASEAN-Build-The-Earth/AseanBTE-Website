@@ -1,3 +1,33 @@
+/* Global variables */
+:root {
+  /* 8pt grid */
+  --pt8: 0.5rem;
+  /* Transitions */
+  --ease-out-expo: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-out-expo-slow: all 4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Flex */
+.flx {
+  display: flex;
+}
+
+.flx-ai-c {
+  align-items: center;
+}
+
+.flx-jc-c {
+  justify-content: center;
+}
+
+.flx-jc-fs {
+  justify-content: flex-start;
+}
+
+.flx-jc-fe {
+  justify-content: flex-end;
+}
+
 body {
   font-family: "MinecraftiaRegular";
   color: black;
@@ -8,6 +38,70 @@ h1 {
   margin-top: 8px;
 }
 
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: calc(var(--pt8) * 12) calc(var(--pt8) * 3);
+}
+
 .content {
-  margin-left: 8px;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: calc(var(--pt8) * 6);
+}
+
+.content h4 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: calc(var(--pt8) * 3);
+}
+
+.content p {
+  line-height: calc(1.25rem + var(--pt8));
+  margin-bottom: calc(var(--pt8) * 6);
+}
+
+.content img {
+  display: block;
+  width: 100%;
+}
+
+.content .imgWrapper {
+  position: relative;
+  border: 3px solid var(--bs-dark);
+  box-shadow: 8px -8px 0 0 var(--bs-dark);
+  overflow: hidden;
+}
+
+.content .lead {
+  /* Font */
+  font-size: 1rem;
+  /* Overlay styling */
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 2;
+  background-color: rgba(33, 37, 41, 0.9);
+  color: #ffffff;
+  padding: 1rem 2rem;
+}
+
+.content img {
+  display: block;
+  width: 100%;
+  transition: var(--ease-out-expo-slow);
+}
+
+.tagBlock {
+  display: inline-block;
+  padding: var(--pt8) calc(var(--pt8) * 2);
+  background-color: var(--bs-dark);
+  /* Font */
+  font-size: 1rem !important;
+  color: #ffffff;
+}
+
+.imgWrapper:hover.imgWrapper img {
+  /* Zoom-in effect */
+  transform: scale(1.3);
 }
