@@ -1,0 +1,262 @@
+body {
+  font-family: "MinecraftiaRegular";
+}
+
+.forestry {
+  margin-left: 5px;
+}
+
+.ALL_CRAFTING {
+  margin-left: 5px;
+}
+
+#mining {
+  margin-left: 5px;
+}
+
+#smelting {
+  margin-left: 5px;
+}
+
+.btn {
+  margin-bottom: 5px;
+}
+
+/* The dirt_achievement fade stuff */
+
+#dirt_achievement {
+  text-align: center;
+}
+
+.hide {
+  display: none;
+}
+
+.fade-in {
+  animation: 2s fadeIn;
+}
+
+.fade-out {
+  animation: 5s fadeOut;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+/* End dirt achievement */
+
+/* The tree_achievement fade stuff */
+
+#tree_achievement {
+  text-align: center;
+}
+
+.hide {
+  display: none;
+}
+
+.fade-in {
+  animation: 2s fadeIn;
+}
+
+.fade-out {
+  animation: 5s fadeOut;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+/* End tree achievement */
+
+/* The cut_tree_achievement fade stuff */
+
+#cut_tree_achievement {
+  text-align: center;
+}
+
+.hide {
+  display: none;
+}
+
+.fade-in {
+  animation: 2s fadeIn;
+}
+
+.fade-out {
+  animation: 5s fadeOut;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+/* End cut tree achievement */
+
+.ALL_CRAFTING {
+  column-count: 1;
+  column-gap: 25px;
+}
+
+/* The dirt_achievement fade stuff */
+
+#dirt_achievement {
+  text-align: center;
+}
+
+.hide {
+  display: none;
+}
+
+.fade-in {
+  animation: 2s fadeIn;
+}
+
+.fade-out {
+  animation: 5s fadeOut;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+/* End dirt achievement */
+
+/* The tree_achievement fade stuff */
+
+#tree_achievement {
+  text-align: center;
+}
+
+.hide {
+  display: none;
+}
+
+.fade-in {
+  animation: 2s fadeIn;
+}
+
+.fade-out {
+  animation: 5s fadeOut;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+/* End tree achievement */
+
+/* The cut_tree_achievement fade stuff */
+
+#cut_tree_achievement {
+  text-align: center;
+}
+
+.hide {
+  display: none;
+}
+
+.fade-in {
+  animation: 2s fadeIn;
+}
+
+.fade-out {
+  animation: 5s fadeOut;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+/* End cut tree achievement */
