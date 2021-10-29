@@ -99,7 +99,7 @@ footer {
   background: #000116;
   width: 800px;
   min-height: 500px;
-  margin: 20px;
+  margin: auto;
   overflow: hidden;
   border-radius: 10px;
 }
