@@ -39,6 +39,11 @@ body {
   background-size: cover;
 }
 
+/* nav bar */
+.nav-link {
+  margin-right: 1em !important;
+}
+
 /*
 NOTE: Several css properties include the !important property to overide Bootstrap's css.
 */
