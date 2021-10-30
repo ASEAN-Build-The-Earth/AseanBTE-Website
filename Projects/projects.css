@@ -32,16 +32,71 @@ body {
   font-family: "MinecraftiaRegular";
   font-size: x-large;
   color: rgb(0, 0, 0);
-}
-
-h1 {
-  text-align: center;
-  margin-top: 8px;
+  background: url(../Assets/Images/whiteBackground.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 /*
 NOTE: Several css properties include the !important property to overide Bootstrap's css.
 */
+header {
+  background-image: url(https://buildtheearth.net/uploads/3042561af33a985e5ea938c3749f7f493c960dc4.png);
+  background-repeat: none;
+  background-size: cover;
+  background-position: 50% 0%;
+  position: relative;
+}
+
+header::after {
+  display: block;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(0,0,0,0.75);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+  padding: calc(var(--pt8) * 12) calc(var(--pt8) * 3);
+}
+
+header h1 {
+  font-weight: bold;
+  margin-bottom: calc(var(--pt8) * 4);
+}
+
+header h1,
+header h4 {
+  color: #ffffff;
+}
+
+header .viewmore {
+  background-color: #47bb2a !important;
+  color: #ffffff;
+  border-color: #47bb2a;
+  /* Font */
+  text-transform: uppercase;
+}
+
+header .viewmore::after {
+  background-color: #3ca123;
+}
+
+.viewmore i {
+  transition: var(--ease-out-expo);
+}
+
+header .viewmore:hover.viewmore i {
+  transform: rotate(-90deg);
+}
 
 .projectsWrapper {
   padding: calc(var(--pt8) * 12) calc(var(--pt8) * 3);
@@ -114,7 +169,7 @@ NOTE: Several css properties include the !important property to overide Bootstra
 }
 
 .viewmore:hover.viewmore span {
-  color: #dddddd !important;
+  color: #ffffff;
 }
 
 .viewmore::after {
@@ -136,6 +191,17 @@ NOTE: Several css properties include the !important property to overide Bootstra
 
 @media (max-width: 660px) {
   .projects .lead {
+    width: 100%;
+  }
+}
+
+@media (max-width: 770px) {
+  header h1,
+  header h4 {
+    text-align: center;
+  }
+
+  header .viewmore {
     width: 100%;
   }
 }
