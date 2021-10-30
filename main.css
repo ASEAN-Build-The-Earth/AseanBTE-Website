@@ -58,6 +58,10 @@ body {
   padding-bottom: 16px;
   color: #000;
 }
+.footer_icon:hover {
+  transform: scale(1.2);
+  transition: all 0.5s;
+}
 footer {
   margin: 0;
   background-color: var(--nav-bar-black);
