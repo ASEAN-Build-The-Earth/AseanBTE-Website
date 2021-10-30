@@ -223,3 +223,114 @@ footer {
     font-size: 0.9em;
   }
 }
+
+header {
+  background-image: url(./Assets/Images/minecraft_builds/MC_SingaporeSkyline_1.png);
+  background-repeat: none;
+  background-size: cover;
+  background-position: 50% 0%;
+  position: relative;
+}
+
+header::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+  padding: calc(var(--pt8) * 12) calc(var(--pt8) * 3);
+}
+
+header h1 {
+  font-weight: bold;
+  margin-bottom: calc(var(--pt8) * 4);
+}
+
+header h1,
+header h4 {
+  color: #ffffff;
+}
+
+header .viewmore {
+  background-color: #47bb2a !important;
+  color: #ffffff;
+  border-color: #47bb2a;
+  /* Font */
+  text-transform: uppercase;
+}
+
+header .viewmore::after {
+  background-color: #3ca123;
+}
+
+.viewmore i {
+  transition: var(--ease-out-expo);
+}
+
+header .viewmore:hover.viewmore i {
+  transform: rotate(-90deg);
+}
+
+.viewmore {
+  position: relative;
+  overflow: hidden;
+  margin-top: 1rem;
+  padding: 1rem 3rem !important;
+  background-color: #e6e6e6 !important;
+  /* Font */
+  font-size: 0.875rem !important;
+}
+
+.viewmore:hover {
+  background-color: #dddddd !important;
+}
+
+.viewmore span {
+  position: relative;
+  z-index: 3;
+}
+
+.viewmore:hover.viewmore span {
+  color: #ffffff;
+}
+
+.viewmore::after {
+  content: "";
+  width: 0;
+  height: 100%;
+  background-color: var(--bs-dark);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  /* Transition */
+  transition: var(--ease-out-expo);
+}
+
+.viewmore:hover:after {
+  width: 100%;
+}
+
+@media (max-width: 770px) {
+  header h1,
+  header h4 {
+    text-align: center;
+  }
+
+  header .viewmore {
+    width: 100%;
+  }
+
+  .landingpage_logo {
+    margin-bottom: 2.5px;
+  }
+}
