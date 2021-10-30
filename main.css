@@ -30,7 +30,7 @@
 
 body {
   font-family: "MinecraftiaRegular";
-  font-weight: 1000;
+  /* font-weight: 1000; */
 }
 .navbar {
   background: #537b3f;
