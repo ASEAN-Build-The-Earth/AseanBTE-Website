@@ -1,0 +1,54 @@
+body {
+    font-family: "MinecraftiaRegular";
+  
+    background: url(../Assets/Images/background/bg_whitetown.jpg) no-repeat center center fixed;
+    background-size: cover;
+    color: black;
+  }
+/* nav bar */
+.nav-link {
+    margin-right: 1em !important;
+  }
+
+h1 {
+    margin-top: 8px;
+    text-align: center;
+  }
+
+  p {
+    /* dir:"ltr"; */
+    font-size: 12pt;
+    line-height: 1.38;
+    margin-top: 32px;
+    margin-left: 8px;
+    margin-bottom: 0pt;
+    
+  }
+
+.faq-h3{
+    text-align: center;
+  }
+
+.faq-h4{
+    flex: auto;
+    flex-wrap: wrap;
+}
+
+.faq-h{
+  font-size: 18px;
+}
+.yt-vid{
+  text-align: center;
+}
+
+.list{
+  line-height: 1.38;
+  font-size: 12px; 
+  background-color: transparent; 
+  font-weight: 400; 
+  font-style: normal;
+  font-variant: normal; 
+  text-decoration: none; 
+  vertical-align: baseline; 
+  white-space: pre-wrap;
+}
