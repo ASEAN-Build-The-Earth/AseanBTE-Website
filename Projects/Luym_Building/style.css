@@ -33,7 +33,7 @@ body {
   color: black;
 
   /* main background */
-  background: url(/Assets/Images/background/bg_whitetown.jpg) no-repeat center center fixed;
+  background: url(../../Assets/Images/background/bg_whitetown.jpg) no-repeat center center fixed;
   background-size: cover;
 }
 /* nav bar */
