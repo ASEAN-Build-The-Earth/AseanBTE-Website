@@ -32,11 +32,15 @@ body {
   font-family: "MinecraftiaRegular";
   font-size: x-large;
   color: rgb(0, 0, 0);
-  background: url(../Assets/Images/whiteBackground.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+  
+  /* main background */
+  background: url(../Assets/Images/background/bg_whitetown.jpg) no-repeat center center fixed;
   background-size: cover;
+}
+
+/* nav bar */
+.nav-link {
+  margin-right: 1em !important;
 }
 
 /*
