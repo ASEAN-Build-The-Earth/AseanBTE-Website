@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASEAN-BTE | Minecraft game</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/minecraftia" type="text/css" />
+	<link rel="icon" href="../Assets/Images/icons/aseanbte_logo.png">
+    <script src="https://kit.fontawesome.com/ce6ee433fd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body onload='hideCrafts(); hideMines(); hideSmelts()'>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a><img src="../Assets/Images/icons/aseanbte_logo.gif" height="60" width="60"></a>
+            <a href="../index.html" class="navbar-brand">&nbsp;ASEAN</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="../Projects/projects.html" class="nav-link p-3" style="font-size: large;">
+                            <i class="fas fa-tasks"></i>&nbsp;Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../Contact_Us/contact.html" class="nav-link p-3" style="font-size: large;">
+                            <i class="fa fa-fw fa-envelope"></i>&nbsp;Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../Staff_and_Contributors/index.html" class="nav-link p-3" style="font-size: large;">
+                            <i class="fas fa-atlas"></i>&nbsp;Staff and Contributors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../Teams/index.html" class="nav-link p-3" style="font-size: large;">
+                            <i class="fas fa-atlas"></i>&nbsp;Teams</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="hide" id="dirt_achievement">
+
+        <p style="color:#fc0;background-color:#404040;"><br>You got an advancement!<span style="color:#ffffff"> A Good
+                Start: Mine 1 dirt block<br>&nbsp</span></p>
+    </div>
+
+    <div class="hide" id="tree_achievement">
+
+        <p style="color:#fc0;background-color:#404040;"><br>You got an advancement!<span style="color:#ffffff"> Going
+                Green: Grow a tree<br>&nbsp</span></p>
+    </div>
+
+    <div class="hide" id="cut_tree_achievement">
+
+        <p style="color:#fc0;background-color:#404040;"><br>You got an advancement!<span style="color:#ffffff">
+                Deforestation: Cut down a tree<br>&nbsp</span></p>
+    </div>
+
+    <h1 style="margin-left: 5px;">Forest</h1>
+
+    <div class="forestry">
+
+        <a id="dirt" onclick="getDirt()" type="button" class="btn btn-dark" style="font-size: 15px;">Mine Dirt
+            Block</button></a>
+        <p>You have <input type="text" id="dirts" value="0" style="color:#000000; background-color:#ffffff"
+                disabled></input> Dirt Blocks</p>
+
+        <a id="grass" onclick="getGrass()" type="button" class="btn btn-dark" style="font-size: 15px;">Convert Dirt
+            Block to Grass
+            Block</button></a>
+        <p>You have <input type="text" id="grasses" value="0" style="color:#000000; background-color:#ffffff"
+                disabled></input> Grass Blocks</p>
+
+        <a id="tree" onclick="growTree()" type="button" class="btn btn-dark" style="font-size: 15px;">Grow Tree - Cost:
+            1 Grass
+            Block</button></a>
+        <p>You have <input type="text" id="trees" value="0" style="color:#000000; background-color:#ffffff"
+                disabled></input> Trees</p>
+
+        <a id="cutTree" onclick="cutTree()" type="button" class="btn btn-dark" style="font-size: 15px;">Cut Tree - Cost:
+            1 Tree</button></a>
+        <p>You have <input type="text" id="logs" value="0" style="color:#000000; background-color:#ffffff"
+                disabled></input> Logs</p>
+
+    </div>
+
+    <div class="ALL_CRAFTING">
+
+        <div id="carfting">
+            <br><br>
+
+            <h1>Crafting</h1>
+
+            <a id="makePlanks" onclick="craftPlanks()" type="button" class="btn btn-dark" style="font-size: 15px;">Craft
+                Planks - Cost: 1 Log</button></a>
+            <p>You have <input type="text" id="planks" value="0" style="color:#000000; background-color:#ffffff"
+                    disabled></input> Planks</p>
+
+        </div>
+
+        <div id="crafting">
+
+            <a id="makePlanks" onclick="craftTable()" type="button" class="btn btn-dark" style="font-size: 15px;">Craft
+                a Crafting Table - Cost: 4 Planks</a>
+            <p>You have <input type="text" id="tables" value="0" style="color:#000000; background-color:#ffffff"
+                    disabled></input> Crafting Tables</p>
+
+        </div>
+
+        <div id="adv_crafting">
+
+            <a id="placeTable" onclick="placeTable()" type="button" class="btn btn-dark">Place a Crafting <Table> -
+                    Cost: 1 Crafting Table</Table></a>
+            <p>You have placed <input type="text" id="Placedtables" value="0"
+                    style="color:#000000; background-color:#ffffff" disabled></input> Crafting Tables</p>
+
+        </div>
+
+        <div id="pro_crafting">
+            <br>
+            <a id="makeSticks" onclick="makeSticks()" type="button" class="btn btn-dark">Craft Sticks - Cost: 2
+                Planks</a>
+            <p>You have <input type="text" id="sticks" value="0" style="color:#000000; background-color:#ffffff"
+                    disabled></input> Sticks</p>
+
+            <br>
+            <a id="makeWoodPick" onclick="makeWoodPick()" type="button" class="btn btn-dark">Craft Wooden Pickaxe -
+                Cost: 2 Sticks, 3 Planks</a>
+            <p>You have <input type="text" id="woodPick" value="0" style="color:#000000; background-color:#ffffff"
+                    disabled></input> <span id='pick'>Wooden</span> Pickaxes</p>
+            Durability: <input type="text" id="Durability" value="-" style="color:#000000; background-color:#ffffff"
+                disabled></input>
+
+        </div>
+
+    </div>
+
+
+    <div id="mining">
+        <h1>Mining</h1>
+        <a id="mineStone" onclick="mineBlock()" type="button" class="btn btn-dark">Mine a block</a>
+        <p>You have <input type="text" id="stone" value="0" style="color:#000000; background-color:#ffffff"
+                disabled></input> Cobblestone</p>
+        <p>You have <input type="text" id="coal" value="0" style="color:#000000; background-color:#ffffff"
+                disabled></input> Coal</p>
+        <p>You have <input type="text" id="iron_ore" value="0" style="color:#000000; background-color:#ffffff"
+                disabled></input> Iron Ore</p>
+
+
+    </div>
+
+    <div id="smelting">
+
+        <div id="craft_furnace">
+            <a id="craftFurnace" onclick="craftFurnace()" type="button" class="btn btn-dark">Craft Furnace - Cost: 8
+                Cobblestone</a>
+            <p>You have <input type="text" id="furnace" value="0" style="color:#000000; background-color:#ffffff"
+                    disabled></input> Furnaces</p>
+            <p>Currently, <input type="text" id="av_furnace" value="0" style="color:#000000; background-color:#ffffff"
+                    disabled></input> Furnaces are available</p>
+        </div>
+
+        <div id="iron">
+            <a id="smelt_iron" onclick="smeltIron()" type="button" class="btn btn-dark">Smelt Iron - Cost: 1 Iron Ore, 1
+                Coal</a>
+            <p>You have <input type="text" id="iron_ingot" value="0" style="color:#000000; background-color:#ffffff"
+                    disabled></input> Iron Ingots</p>
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+        </script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
