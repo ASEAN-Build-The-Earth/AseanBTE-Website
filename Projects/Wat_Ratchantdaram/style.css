@@ -31,6 +31,10 @@
 body {
   font-family: "MinecraftiaRegular";
   color: black;
+
+  /* main background */
+  background: url(../../Assets/Images/background/bg_whitetown.jpg) no-repeat center center fixed;
+  background-size: cover;
 }
 /* nav bar */
 .nav-link {
@@ -202,6 +206,18 @@ header .viewmore:hover.viewmore i {
 }
 
 @media (max-width: 770px) {
+  header h1,
+  header h4 {
+    text-align: center;
+  }
+
+  header .viewmore {
+    width: 100%;
+  }
+}
+
+/*Apple Watch (Parrity) 38mm 40mm 42mm*/
+@media (max-width: 400px) {
   header h1,
   header h4 {
     text-align: center;

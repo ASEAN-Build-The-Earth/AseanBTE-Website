@@ -58,6 +58,10 @@ body {
   padding-bottom: 16px;
   color: #000;
 }
+.footer_icon:hover {
+  transform: scale(1.2);
+  transition: all 0.5s;
+}
 footer {
   margin: 0;
   background-color: var(--nav-bar-black);
@@ -332,5 +336,19 @@ header .viewmore:hover.viewmore i {
 
   .landingpage_logo {
     margin-bottom: 2.5px;
+  }
+}
+   
+/*Apple Watch (Parrity) 38mm 40mm 42mm*/
+@media (max-width: 400px) {
+  .slider .slide .info h2 {
+    font-size: 1.2em;
+    line-height: 40px;
+    margin-left: 4px;
+    margin-right: 2px;
+  }
+
+  .slider .slide .info p {
+    font-size: 0.4em;
   }
 }
