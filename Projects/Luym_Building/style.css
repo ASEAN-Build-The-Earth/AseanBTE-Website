@@ -218,3 +218,15 @@ header .viewmore:hover.viewmore i {
     width: 100%;
   }
 }
+
+/*Apple Watch (Parrity) 38mm 40mm 42mm*/
+@media (max-width: 400px) {
+  header h1,
+  header h4 {
+    text-align: center;
+  }
+
+  header .viewmore {
+    width: 100%;
+  }
+}

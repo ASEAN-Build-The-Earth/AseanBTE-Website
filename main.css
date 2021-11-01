@@ -227,3 +227,17 @@ footer {
     font-size: 0.9em;
   }
 }
+
+/*Apple Watch (Parrity) 38mm 40mm 42mm*/
+@media (max-width: 400px) {
+  .slider .slide .info h2 {
+    font-size: 1.2em;
+    line-height: 40px;
+    margin-left: 4px;
+    margin-right: 2px;
+  }
+
+  .slider .slide .info p {
+    font-size: 0.4em;
+  }
+}

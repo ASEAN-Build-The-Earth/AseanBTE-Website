@@ -83,3 +83,10 @@ p {
     margin: 20px;
   }
 }
+
+/*Apple Watch (Parrity) 40mm*/
+@media (max-width: 395px) {
+  .card {
+    margin: 12px;
+  }
+}
