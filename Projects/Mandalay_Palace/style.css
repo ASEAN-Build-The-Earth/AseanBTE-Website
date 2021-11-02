@@ -33,7 +33,8 @@ body {
   color: black;
 
   /* main background */
-  background: url(../../Assets/Images/background/bg_whitetown.jpg) no-repeat center center fixed;
+  background: url(../../Assets/Images/background/bg_whitetown.jpg) no-repeat
+    center center fixed;
   background-size: cover;
 }
 /* nav bar */
@@ -45,7 +46,7 @@ body {
 NOTE: Several css properties include the !important property to overide Bootstrap's css.
 */
 header {
-  background-image: url(https://buildtheearth.net/uploads/3042561af33a985e5ea938c3749f7f493c960dc4.png);
+  background-image: url(../../Assets/Images/Project_Images/Mandalay_Palace/cover.png) !important;
   background-repeat: none;
   background-size: cover;
   background-position: 50% 0%;
@@ -54,14 +55,14 @@ header {
 
 header::after {
   display: block;
-  content: '';
+  content: "";
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
   position: absolute;
   z-index: 1;
-  background-color: rgba(0,0,0,0.75);
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 header .container {
