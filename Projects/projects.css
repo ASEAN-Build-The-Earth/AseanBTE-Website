@@ -32,11 +32,15 @@ body {
   font-family: "MinecraftiaRegular";
   font-size: x-large;
   color: rgb(0, 0, 0);
-  background: url(../Assets/Images/whiteBackground.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+  
+  /* main background */
+  background: url(../Assets/Images/background/bg_whitetown.jpg) no-repeat center center fixed;
   background-size: cover;
+}
+
+/* nav bar */
+.nav-link {
+  margin-right: 1em !important;
 }
 
 /*
@@ -154,13 +158,15 @@ header .viewmore:hover.viewmore i {
   overflow: hidden;
   margin-top: 1rem;
   padding: 1rem 3rem !important;
-  background-color: #e6e6e6 !important;
+  background-color: #47bb2a !important;
   /* Font */
   font-size: 0.875rem !important;
+  color: #ffffff;
+  border-color: #47bb2a;
 }
 
 .viewmore:hover {
-  background-color: #dddddd !important;
+  background-color: #47bb2a !important;
 }
 
 .viewmore span {

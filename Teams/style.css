@@ -1,11 +1,13 @@
 body {
   font-family: "MinecraftiaRegular";
-  background: url(../Assets/Images/blueBackground.png) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+
+  background: url(../Assets/Images/background/bg_fractal_green.png) no-repeat center center fixed;
   background-size: cover;
   color: black;
+}
+/* nav bar */
+.nav-link {
+  margin-right: 1em !important;
 }
 
 h1 {
@@ -48,14 +50,14 @@ p {
 }
 
 .card-1 {
-  background-image: url(../Assets/Images/card_contributors.png);
+  background-image: url(../Assets/Images/overlays/card_contributors.png);
   background-repeat: no-repeat;
   background-position: right;
   background-size: 80px;
 }
 
 .card-2 {
-  background-image: url(../Assets/Images/card_contributors.png);
+  background-image: url(../Assets/Images/overlays/card_contributors.png);
   background-repeat: no-repeat;
   background-position: right;
   background-size: 80px;
@@ -65,5 +67,11 @@ p {
 @media (max-width: 990px) {
   .card {
     margin: 20px;
+  }
+}
+
+@media (max-width: 395px) {
+  .card {
+    margin: 15px;
   }
 }
