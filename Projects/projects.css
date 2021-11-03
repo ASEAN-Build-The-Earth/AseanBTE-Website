@@ -236,6 +236,10 @@ footer {
   background-color: var(--bs-gray-dark);
 }
 
+footer .footerWrapper {
+  max-width: 900px;
+}
+
 footer img {
   display: block;
   margin-right: calc(var(--pt8) * 2);
@@ -246,7 +250,7 @@ footer ul {
 }
 
 footer ul li {
-  line-height: 3rem;
+  line-height: 2rem;
 }
 
 footer a {
@@ -290,6 +294,7 @@ footer .bottomFooter i {
 footer .title {
   font-size: medium;
   color: #47bb2a !important;
+  margin-bottom: calc(var(--pt8) * 3);
 }
 
 footer .bottomFooter .btt-link {
@@ -305,7 +310,7 @@ footer .bottomFooter .btt-link {
   }
 
   footer .footerNavs nav {
-    margin: calc(var(--pt8) * 4) 0;
+    margin: calc(var(--pt8) * 2.3) 0;
   }
 
   footer .navbar-brand {
