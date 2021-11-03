@@ -28,6 +28,10 @@
   justify-content: flex-end;
 }
 
+.flx-jc-sb {
+  justify-content: space-between;
+}
+
 body {
   font-family: "MinecraftiaRegular";
   font-size: x-large;
