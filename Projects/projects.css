@@ -33,6 +33,10 @@
 }
 
 /* Container padding */
+.pt24-tb {
+  padding: calc(var(--pt8) * 4) 0;
+}
+
 .pt48-tb {
   padding: calc(var(--pt8) * 8) 0;
 }
