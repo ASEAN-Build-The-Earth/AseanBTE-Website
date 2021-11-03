@@ -324,6 +324,10 @@ footer .bottomFooter .btt-link {
   footer .bottomFooter .container {
     flex-direction: column;
   }
+
+  footer .footerNavs i {
+    font-size: 2rem !important;
+  }
 }
 
 /*Apple Watch (Parrity) 38mm 40mm 42mm*/
