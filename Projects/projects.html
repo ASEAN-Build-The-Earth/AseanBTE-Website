@@ -16,7 +16,7 @@
 
 <body>
   <!-- nav bar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav id="scrollHereBtt-link" class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
       <img src="../Assets/Images/icons/aseanbte_logo.gif" height="60" width="60">
       <a href="../index.html" class="navbar-brand">&nbsp;ASEAN</a>
@@ -108,73 +108,83 @@
   </section>
   <!-- Project gallery end -->
   <footer>
-    <div class="container pt48-tb">
-      <nav class="flx flx-jc-sb">
-        <ul>
-          <li class="flx flx-ai-c">
-            <a href="../index.html" class="navbar-brand">
-              <img src="https://asean-bte.netlify.app/Assets/Images/icons/aseanbte_logo.gif" height="60" width="60">
-            </a>
-            ASEAN
-          </li>
-        </ul>
-        <ul>
-          <li class="title">Projects</li>
-          <li>
-            <a href="./Mandalay_Palace/index.html">Mandalay Palace</a>
-          </li>
-          <li>
-            <a href="./Wat_Ratchantdaram/index.html">Wat Ratchanatdaram</a>
-          </li>
-          <li>
-            <a href="./Luym_Building/index.html">Luym Building</a>
-          </li>
-          <li>
-            <a href="./Pippin_CBD/index.html">Pippin CBD</a>
-          </li>
-        </ul>
-        <ul>
-          <li class="title">Team</li>
-          <li>
-            <a href="../Contact_Us/contact.html">Contact Us</a>
-          </li>
-          <li>
-            <a href="../About_Us/index.html">About Us</a>
-          </li>
-          <li>
-            <a href="../Teams/index.html">Teams</a>
-          </li>
-        </ul>
-      </nav>
+    <div class="footerWrapper container pt48-tb">
+      <div class="footerNavs flx flx-jc-sb">
+        <nav>
+          <ul>
+            <li class="flx flx-ai-c">
+              <a href="../index.html" class="navbar-brand flx">
+                <img src="https://asean-bte.netlify.app/Assets/Images/icons/aseanbte_logo.gif" height="60" width="60">
+                ASEAN
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <nav>
+          <ul>
+            <li class="title">Projects</li>
+            <li>
+              <a href="./Mandalay_Palace/index.html">Mandalay Palace</a>
+            </li>
+            <li>
+              <a href="./Wat_Ratchantdaram/index.html">Wat Ratchanatdaram</a>
+            </li>
+            <li>
+              <a href="./Luym_Building/index.html">Luym Building</a>
+            </li>
+            <li>
+              <a href="./Pippin_CBD/index.html">Pippin CBD</a>
+            </li>
+          </ul>
+        </nav>
+        <nav>
+          <ul>
+            <li class="title">Team</li>
+            <li>
+              <a href="../Contact_Us/contact.html">Contact Us</a>
+            </li>
+            <li>
+              <a href="../About_Us/index.html">About Us</a>
+            </li>
+            <li>
+              <a href="../Teams/index.html">Teams</a>
+            </li>
+          </ul>
+        </nav>
+        <nav>
+          <ul>
+            <li class="title">Follow Us</li>
+          </ul>
+          <ul class="flx flx-ai-c">
+            <li>
+              <a href="https://discord.gg/46Ed3UUJRD" target="_blank"><i class="footer_icon fab fa-discord"></i></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/bte.asean/" target="_blank"><i
+                  class="footer_icon fab fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="https://github.com/ASEAN-Build-The-Earth/" target="_blank"><i
+                  class="footer_icon fab fa-github"></i></a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/c/TeamASEANBuildTheEarth/videos" target="_blank"><i
+                  class="footer_icon fab fa-youtube"></i></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/bte_asean" target="_blank"><i class="footer_icon fab fa-twitter"></i></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
     <div class="bottomFooter">
       <div class="container flx flx-ai-c flx-jc-sb">
         <span>
-          <p>&copy; Asean, Build the Earth</p>
+          <p>&copy; Asean, Build the Earth. All rights reserved.</p>
         </span>
         <span>
-          <nav>
-            <ul class="flx flx-ai-c">
-              <li>
-                <a href="https://discord.gg/46Ed3UUJRD" target="_blank"><i class="footer_icon fab fa-discord"></i></a>
-              </li>
-              <li>
-                <a href="https://www.instagram.com/bte.asean/" target="_blank"><i
-                    class="footer_icon fab fa-instagram"></i></a>
-              </li>
-              <li>
-                <a href="https://github.com/ASEAN-Build-The-Earth/" target="_blank"><i
-                    class="footer_icon fab fa-github"></i></a>
-              </li>
-              <li>
-                <a href="https://www.youtube.com/c/TeamASEANBuildTheEarth/videos" target="_blank"><i
-                    class="footer_icon fab fa-youtube"></i></a>
-              </li>
-              <li>
-                <a href="https://twitter.com/bte_asean" target="_blank"><i class="footer_icon fab fa-twitter"></i></a>
-              </li>
-            </ul>
-          </nav>
+          <p id="scrollActivateBtt-link" class="btt-link"><i class="fas fa-arrow-circle-up"></i> Take me back to the top</p>
         </span>
       </div>
     </div>
@@ -190,6 +200,14 @@
     $("#scrollActivate").click(function () {
       $('html, body').animate({
         scrollTop: $("#scrollHere").offset().top
+      }, 600);
+    });
+  </script>
+  <!-- Scroll back to top -->
+  <script>
+    $("#scrollActivateBtt-link").click(function () {
+      $('html, body').animate({
+        scrollTop: $("#scrollHereBtt-link").offset().top
       }, 600);
     });
   </script>

@@ -243,12 +243,16 @@ footer ul {
 
 footer ul li {
   line-height: 3rem;
-  color: #47bb2a;
 }
 
 footer a {
   text-decoration: none;
   font-size: 0.75rem;
+}
+
+footer i {
+  font-size: 1rem !important;
+  margin-right: calc(var(--pt8) * 2);
 }
 
 footer a,
@@ -257,8 +261,7 @@ footer ul:nth-child(1) li {
   transition: var(--ease-out-expo);
 }
 
-footer a:hover,
-footer ul:nth-child(1) li:hover {
+footer a:hover {
   color: #ffffff;
   opacity: 0.5;
 }
@@ -282,6 +285,32 @@ footer .bottomFooter i {
 
 footer .title {
   font-size: medium;
+  color: #47bb2a !important;
+}
+
+footer .bottomFooter .btt-link {
+  text-decoration: underline;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  footer .footerNavs {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  footer .footerNavs nav {
+    margin: calc(var(--pt8) * 4) 0;
+  }
+
+  footer .navbar-brand {
+    margin: 0 auto;
+  }
+
+  footer nav:nth-child(4) ul:nth-child(2) {
+    display: inline-flex;
+  }
 }
 
 /*Apple Watch (Parrity) 38mm 40mm 42mm*/
