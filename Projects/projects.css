@@ -280,6 +280,10 @@ footer .bottomFooter i {
   margin-left: calc(var(--pt8) * 2);
 }
 
+footer .title {
+  font-size: medium;
+}
+
 /*Apple Watch (Parrity) 38mm 40mm 42mm*/
 @media (max-width: 400px) {
 
