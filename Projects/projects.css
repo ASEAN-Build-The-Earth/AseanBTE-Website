@@ -158,7 +158,7 @@ header .viewmore:hover.viewmore i {
   position: relative;
   overflow: hidden;
   margin-top: 1rem;
-  padding: 1rem 3rem !important;
+  padding: 0.75rem 2rem !important;
   background-color: #47bb2a !important;
   /* Font */
   font-size: 0.875rem !important;
