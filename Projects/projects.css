@@ -38,8 +38,7 @@ body {
   color: rgb(0, 0, 0);
 
   /* main background */
-  background: url(../Assets/Images/background/bg_whitetown.jpg) no-repeat center
-    center fixed;
+  background: url(../Assets/Images/background/bg_whitetown.jpg) no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -48,6 +47,7 @@ body {
   font-size: medium;
   margin-right: 1em !important;
 }
+
 /*
 NOTE: Several css properties include the !important property to overide Bootstrap's css.
 */
@@ -207,6 +207,7 @@ header .viewmore:hover.viewmore i {
 }
 
 @media (max-width: 770px) {
+
   header h1,
   header h4 {
     text-align: center;
@@ -217,8 +218,62 @@ header .viewmore:hover.viewmore i {
   }
 }
 
+/* Footer */
+footer {
+  background-color: var(--bs-gray-dark);
+}
+
+footer img {
+  display: block;
+  margin-right: calc(var(--pt8) * 2);
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer ul li {
+  line-height: 3rem;
+  color: #47bb2a;
+}
+
+footer a {
+  text-decoration: none;
+  font-size: 0.75rem;
+}
+
+footer a,
+footer ul:nth-child(1) li {
+  color: #ffffff;
+  transition: var(--ease-out-expo);
+}
+
+footer a:hover,
+footer ul:nth-child(1) li:hover {
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+footer .bottomFooter {
+  background-color: #000000;
+}
+
+footer .bottomFooter p {
+  color: gray;
+  font-size: 0.75rem;
+}
+
+footer .bottomFooter a {
+  display: inline-block;
+}
+
+footer .bottomFooter i {
+  margin-left: calc(var(--pt8) * 2);
+}
+
 /*Apple Watch (Parrity) 38mm 40mm 42mm*/
 @media (max-width: 400px) {
+
   header h1,
   header h4 {
     text-align: center;
