@@ -41,9 +41,9 @@ body {
 
 /* nav bar */
 .nav-link {
+  font-size: medium;
   margin-right: 1em !important;
 }
-
 /*
 NOTE: Several css properties include the !important property to overide Bootstrap's css.
 */
