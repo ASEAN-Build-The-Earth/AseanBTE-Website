@@ -116,3 +116,11 @@ body {
     margin-top: 10px;
   }
 }
+
+.link {
+  text-decoration: none;
+}
+
+code {
+  font-family: "MinecraftiaRegular";
+}
