@@ -30,7 +30,8 @@
 
 body {
   font-family: "MinecraftiaRegular";
-  background: url(../Assets/Images/background/bg_bluehills.jpg) no-repeat center center fixed;
+  background: url(../Assets/Images/background/bg_bluehills.jpg) no-repeat center
+    center fixed;
   background-size: cover;
 }
 
@@ -147,7 +148,7 @@ p {
   border-radius: 4px;
   outline: none;
   font-size: 16px;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   outline: none;
   width: 100%;
 }
@@ -232,6 +233,10 @@ p {
   }
 
   .contact .contactForm {
-    padding-bottom: calc(var(--pt8) *6) !important;
+    padding-bottom: calc(var(--pt8) * 6) !important;
   }
+}
+
+code {
+  font-family: "MinecraftiaRegular";
 }
