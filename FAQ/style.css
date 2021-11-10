@@ -1,77 +1,118 @@
 body {
   font-family: "MinecraftiaRegular";
-
-  background: url(../Assets/Images/background/bg_fractal_green.png) no-repeat center center fixed;
-  background-size: cover;
-  color: black;
-}
-/* nav bar */
-.nav-link {
-  margin-right: 1em !important;
 }
 
-h1 {
-  margin-top: 8px;
-  text-align: center;
+.faq-section {
+  background: #fdfdfd;
+  min-height: 100vh;
+  padding: 10vh 0 0;
 }
-
-p {
-  margin-top: 32px;
-  margin-left: 8px;
-}
-
-
-.card {
-  padding: 50px;
-  border-radius: 4px;
-  background: #add8e6;
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
-  transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
-    0.3s box-shadow,
-    0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
-  padding: 14px 80px 18px 36px;
-  cursor: pointer;
-}
-
-.card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
-}
-
-.card h3 {
+.faq-title h2 {
+  position: relative;
+  margin-bottom: 45px;
+  display: inline-block;
   font-weight: 600;
+  line-height: 1;
 }
-
-.card img {
+.faq-title h2::before {
+  content: "";
   position: absolute;
-  top: 20px;
-  right: 15px;
-  max-height: 120px;
+  left: 50%;
+  width: 60px;
+  height: 2px;
+  background: #0fa4d1;
+  bottom: -25px;
+  margin-left: -30px;
+}
+.faq-title p {
+  padding: 0 190px;
+  margin-bottom: 10px;
 }
 
-.card-1 {
-  background-image: url(../Assets/Images/overlays/card_contributors.png);
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: 80px;
+.faq {
+  background: #ffffff;
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
 }
 
-.card-2 {
-  background-image: url(../Assets/Images/overlays/card_contributors.png);
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: 80px;
-  margin-top: 20px;
+.faq .card {
+  border: none;
+  background: none;
+  border-bottom: 1px dashed #cee1f8;
 }
 
-@media (max-width: 990px) {
-  .card {
-    margin: 20px;
+.faq .card .card-header {
+  padding: 0px;
+  border: none;
+  background: none;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.faq .card .card-header:hover {
+  background: rgba(11, 120, 223, 0.301);
+  padding-left: 10px;
+}
+.faq .card .card-header .faq-title {
+  width: 100%;
+  text-align: left;
+  padding: 0px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 1px;
+  color: #3b566e;
+  text-decoration: none !important;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.faq .card .card-header .faq-title .badge {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  line-height: 14px;
+  float: left;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  text-align: center;
+  background: #0a74ee;
+  color: #fff;
+  font-size: 12px;
+  margin-right: 20px;
+}
+
+.faq .card .card-body {
+  padding: 30px;
+  padding-left: 35px;
+  padding-bottom: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #6f8ba4;
+  line-height: 28px;
+  letter-spacing: 1px;
+  border-top: 1px solid #f3f8ff;
+}
+
+.faq .card .card-body p {
+  margin-bottom: 14px;
+}
+
+@media (max-width: 991px) {
+  .faq {
+    margin-bottom: 30px;
   }
-}
-
-@media (max-width: 395px) {
-  .card {
-    margin: 15px;
+  .faq .card .card-header .faq-title {
+    line-height: 26px;
+    margin-top: 10px;
   }
 }
