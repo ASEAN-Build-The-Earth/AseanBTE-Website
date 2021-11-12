@@ -11,18 +11,27 @@
   width: 100%;
   padding: 80px ;
   background-color: #ccc;
+  border-radius: 25px;
 }
 .index-news article{
   width: 100%;
-  background-color:rgb(153, 153, 153);
+  background-color:#ccc;
 }
 /*change the width and height as well as img url will leave this for the person reviewing it.*/
 .news-img{
   width: 20%;
   height: 100px;
-  background-color: #000;
+  
   background-image: url('');
   
+  
+}
+rcorners1 {
+  border-radius: 25px;
+  background: #ccc;
+  padding: 20px;
+  width: 200px;
+  height: 150px;
 }
 
 /* Flex */
