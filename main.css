@@ -7,23 +7,23 @@
   --ease-out-expo-slow: all 4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.index-news{
-  width: 100%;
-  padding: 80px ;
-  background-color: #ccc;
-  border-radius: 25px;
-}
+
+
 .index-news article{
-  width: 100%;
-  background-color:rgb(87, 87, 87);
+  width: auto;
+  background-color:rgb(189, 189, 189);
   border-radius: 25px;
   overflow: auto;
+}
+.center {
+  text-align: center;
+
+  
 }
 /*change the width and height as well as img url will leave this for the person reviewing it.*/
 .news-img{
   width: 20%;
   height: 100px;
-  
   background-image: url('');
   
   
