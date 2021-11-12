@@ -26,13 +26,7 @@
   
   
 }
-rcorners1 {
-  border-radius: 25px;
-  background: #ccc;
-  padding: 20px;
-  width: 200px;
-  height: 150px;
-}
+
 
 /* Flex */
 .flx {
