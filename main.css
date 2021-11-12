@@ -7,6 +7,24 @@
   --ease-out-expo-slow: all 4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
+.index-news{
+  width: 100%;
+  padding: 80px ;
+  background-color: #ccc;
+}
+.index-news article{
+  width: 100%;
+  background-color:rgb(153, 153, 153);
+}
+/*change the width and height as well as img url will leave this for the person reviewing it.*/
+.news-img{
+  width: 20%;
+  height: 100px;
+  background-color: #000;
+  background-image: url('');
+  
+}
+
 /* Flex */
 .flx {
   display: flex;
