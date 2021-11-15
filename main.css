@@ -260,6 +260,12 @@ header {
   background-position: 50% 0%;
   position: relative;
 }
+h1 {
+  font-size: 25px;
+  background: -webkit-linear-gradient(rgb(0, 255, 115), rgb(0, 153, 255), rgb(28, 212, 245) );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 header::after {
   display: block;
