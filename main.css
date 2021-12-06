@@ -236,6 +236,7 @@ header {
   position: relative;
 }
 
+
 header::after {
   display: block;
   content: "";
@@ -252,6 +253,7 @@ header .container {
   position: relative;
   z-index: 2;
   padding: calc(var(--pt8) * 12) calc(var(--pt8) * 3);
+  
 }
 
 header h1 {
@@ -352,3 +354,4 @@ header .viewmore:hover.viewmore i {
     font-size: 0.4em;
   }
 }
+@import "./Tailwind/tailwind.css"
