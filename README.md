@@ -1,6 +1,6 @@
 # ASEAN-BTE Website
 ASEAN-BTE website`(Work-In-Progress)`. currently hosted by netlify at: [asean-bte.netlify.app](https://asean-bte.netlify.app)
-> old hosting site at github.io: [asean-build-the-earth.github.io](https://asean-build-the-earth.github.io/AseanBTE-Website/)
+> Old hosting site at github.io: [asean-build-the-earth.github.io](https://asean-build-the-earth.github.io/AseanBTE-Website/)
 
 ## About
 - This website is about [Minecraft BuildTheEarth Project](https://www.buildtheearth.net/)
@@ -37,6 +37,12 @@ Join our discord! [here](https://discord.com/invite/tat2uggfeX)
 See our Instragram [here](https://www.instagram.com/bte.asean/)
 
 See our Youtube [here](https://www.youtube.com/channel/UCXgXXpOh3xyuNj7PRz_tDwQ)
+
+## Contributors 
+
+<a href="https://github.com/ASEAN-Build-The-Earth/AseanBTE-Website/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=ASEAN-Build-The-Earth/AseanBTE-Website" />
+</a>
 
 ---
 <h2 align="center">
