@@ -1,6 +1,5 @@
 # ASEAN-BTE Website
-ASEAN-BTE website`(Work-In-Progress)`. currently hosted by netlify at: [asean-bte.netlify.app](https://asean-bte.netlify.app)
-> Old hosting site at github.io: [asean-build-the-earth.github.io](https://asean-build-the-earth.github.io/AseanBTE-Website/)
+ASEAN-BTE website`(Work-In-Progress)`. currently hosted by netlify at: [asean.buildtheearth.asia](https://asean.buildtheearth.asia)
 
 ## About
 - This website is about [Minecraft BuildTheEarth Project](https://www.buildtheearth.net/)
