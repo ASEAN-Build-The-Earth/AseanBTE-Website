@@ -60,6 +60,11 @@
             <a href="../FAQ/index.html" class="nav-link p-3" style="font-size: large;">
               <i class="fas fa-question-circle"></i>&nbsp;FAQ</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link p-3" style="font-size: medium;">
+              <span id="server-status"></span>
+            </a>
+          </li>
         </ul>
       </div>
     </div>
@@ -82,7 +87,7 @@
     </div>
     <div class="contactForm">
       <h2>Contact Us</h2>
-      
+
       <form>
         <span>
           <label><i class="fas fa-user"></i> Name</label>
@@ -97,23 +102,24 @@
           <textarea placeholder="Type Message"></textarea>
         </span>
         <button id="scrollActivate" type="button" class="btn btn-light viewmore"><span>
-          <i class="fas fa-chevron-down"></i>
+            <i class="fas fa-chevron-down"></i>
             Send Message</span></button>
       </form>
     </div>
   </section>
 
-<!-- WORK-IN-PROGRESS smptjs email sending extension for contact-us
-**this will move to new branch to prevent confusion when editing styling of this page, will merge after page is more stable.
+  <!-- WORK-IN-PROGRESS smptjs email sending extension for contact-us
+**This will move to new branch to prevent confusion when editing styling of this page, will merge after page is more stable.**
 
   <script src="https://smtpjs.com/v3/smtp.js"></script>
   <script src="./contact.js"></script>
 -->
-  
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
-  
+  <script src="../mcserverstatus.js"></script>
+
 </body>
 
 </html>
